@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 520px;
+            height: 100vh;
+            /* border: 2px solid black; */
+            margin-left: 400px;  
+            border-radius: 6px;
+            background-color: #FFFFFF;
+    box-shadow:1px 1px 10px gray;
+
+                  
+        }
+        .name{
+            width: 225px;
+            height: 35px;
+            margin-left: 15px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .content{
+            width: 475px;
+            height: 35px;
+            margin-left: 15px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .button{
+            margin-left: 150px;
+            background-color: green;
+            color: white;
+            height: 40px;
+            width: 200px;
+            border-radius: 8px;
+            border: none;
+            font-size: 20px;
+        }
+        .gender{
+            height: 35px;
+            width:135px;
+            border: 1px solid grey;
+            float: right;
+            margin-right: 30px;
+            border-radius: 5px;
+
+        }
+        /* .dob{
+            margin-left: 30px;
+            
+            
+        } */
+        #dob-day{
+            width: 140px;
+            height: 38px;
+            border-radius: 5px;
+            margin-left: 20px;
+            border: 1px solid grey;
+        }
+        #dob-month{
+            width: 140px;
+            height: 38px;
+            border-radius: 5px;
+            margin-left: 20px;
+            border: 1px solid grey;
+        }
+        #dob-year{
+            width: 140px;
+            margin-left: 20px;
+            height: 38px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        
+       
+       
+    </style>
+</head>
+<body>
+    <h1 style="margin-left: 600px; color:blue ;">facebook</h1>
+    <div class="div1">
+        <form id="signup">
+            <h2 style="padding-left: 150px;">Create a new account</h2>
+            <p style="padding-left: 200px; color: grey;">it's qick and easy.</p>
+<hr>
+<input type="text" placeholder="First Name" id="fn" class="name">
+<input type="text" placeholder="Surname" id="sn" class="name">
+<br>
+<input type="email" placeholder="Mobile number or email address" id="email" class="content"><br>
+<input type="password" placeholder="New password" id="newpassword" class="content"><br>
+<label style="padding-left: 20px;">Date of Birth</label><br>
+<div class="dob">
+<select id="dob-day" name="dob-day">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+    <option value="">5</option>
+    <option value="">6</option>
+    <option value="">7</option>
+    <option value="">8</option>
+    <option value="">9</option>
+    <option value="">10</option>
+    <option value="">11</option>
+    <option value="">12</option>
+    <option value="">13</option>
+    <option value="">14</option>
+    <option value="">15</option>
+    <option value="">16</option>
+    <option value="">17</option>
+    <option value="">18</option>
+    <option value="">19</option>
+    <option value="">20</option>
+    <option value="">21</option>
+    <option value="">22</option>
+    <option value="">23</option>
+    <option value="">24</option>
+    <option value="">25</option>
+    <option value="">26</option>
+    <option value="">27</option>
+    <option value="">28</option>
+    <option value="">29</option>
+    <option value="">30</option>
+    <option value="">31</option>
+    </select>
+    <select id="dob-month" name="dob-month">
+        <option value="">January</option>
+        <option value="">February</option>
+        <option value="">March</option>
+        <option value="">April</option>
+        <option value="">May</option>
+        <option value="">June</option>
+        <option value="">July</option>
+        <option value="">August</option>
+        <option value="">September</option>
+        <option value="">October</option>
+        <option value="">November</option>
+        <option value="">December</option>
+        </select>
+        <select id="dob-year" name="dob-year">
+        <option value="">Year</option>
+        <option value="">2024</option>
+        <option value="">2023</option>
+        <option value="">2022</option>
+        <option value="">2021</option>
+        <option value="">2020</option>
+        <option value="">2019</option>
+        <option value="">2018</option>
+        <option value="">2017</option>
+        <option value="">2016</option>
+        <option value="">2015</option>
+        <option value="">2014</option>
+        <option value="">2013</option>
+        <option value="">2012</option>
+        <option value="">2011</option>
+        <option value="">2010</option>
+        <option value="">2009</option>
+        <option value="">2008</option>
+        <option value="">2007</option>
+        <option value="">2006</option>
+        <option value="">2005</option>
+        <option value="">2004</option>
+        <option value="">2003</option>
+        <option value="">2002</option>
+        <option value="">2001</option>
+        <option value="">2000</option>
+        <option value="">1999</option>
+        <option value="">1998</option>
+        <option value="">1997</option>
+        <option value="">1988</option>
+        <option value="">1987</option>
+        <option value="">1986</option>
+        <option value="">1976</option>
+    </select><br></div>
+
+
+<label style="padding-left: 20px;">Gender</label><br>
+<div class="gender">Female<input type="radio" name="gender"></div>
+<div class="gender">Male<input type="radio" name="gender"></div>
+<div class="gender">Custom<input type="radio" name="gender"></div>
+
+<br>
+<p style="padding-left: 20px;">People who use our service may have uploaded your account information to<br> facebook.<a href="#">Learn more.</a></p>
+
+<p style="padding-left: 20px;">By clicking signup, you agree to our <a href="#">Terms, Privacy Policy </a>and <a href="#">Cookies Policy</a> <br>You may recieve SMS notifications from us and can opt out at any time.</p>
+<br>
+<button class="button">sign Up</button><br>
+<h3><a style="color: blue; padding-left: 150px;">Already have an  account?</a></h3>
+
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script>
+         document.querySelector('.button').addEventListener('click', function(e) {
+            e.preventDefault();
+            html2canvas(document.querySelector('.div1'), {
+                onrendered: function(canvas) {
+                    var imgData = canvas.toDataURL('image/png');
+                    var doc = new jsPDF('p', 'mm', 'a4');
+                    doc.addImage(imgData, 'PNG', 10, 10, 190, 0);
+                    doc.save('signup_form.pdf');
+                }
+            });
+        });
+        
+    </script>
+    
+</body>
+</html>
