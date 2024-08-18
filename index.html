@@ -88,6 +88,7 @@
             <h2 style="padding-left: 150px;">Create a new account</h2>
             <p style="padding-left: 200px; color: grey;">it's qick and easy.</p>
 <hr>
+<div class="div2">
 <input type="text" placeholder="First Name" id="fn" class="name">
 <input type="text" placeholder="Surname" id="sn" class="name">
 <br>
@@ -183,6 +184,7 @@
 <div class="gender">Female<input type="radio" name="gender"></div>
 <div class="gender">Male<input type="radio" name="gender"></div>
 <div class="gender">Custom<input type="radio" name="gender"></div>
+</div>
 
 <br>
 <p style="padding-left: 20px;">People who use our service may have uploaded your account information to<br> facebook.<a href="#">Learn more.</a></p>
@@ -201,7 +203,7 @@
     <script>
          document.querySelector('.button').addEventListener('click', function(e) {
             e.preventDefault();
-            html2canvas(document.querySelector('.div1'), {
+            html2canvas(document.querySelector('.div2'), {
                 onrendered: function(canvas) {
                     var imgData = canvas.toDataURL('image/png');
                     var doc = new jsPDF('p', 'mm', 'a4');
